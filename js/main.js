@@ -31,7 +31,7 @@ class item{
         itemBox.appendChild(removeButton);
 
         editButton.addEventListener('click', () =>this.edit(input));
-        // removeButton.addEventListener('click', () => this.remove(itemBox));
+       
 
     }
 
@@ -63,7 +63,7 @@ function check(){
 
 function complete(){
     let addT = $('.item_input').attr('value')
-    // console.log(ad.value);
+   
     let notes2 = localStorage.getItem("notes2");
     if (notes2 == null) {
         notesObj2 = [];
@@ -153,7 +153,7 @@ function deleteNote2(index) {
 }
 
 function deleteNote(index) {
-    // console.log(index);
+    
     let notes = localStorage.getItem("notes");
     if (notes == null) {
         notesObj = [];
@@ -168,7 +168,7 @@ function deleteNote(index) {
 
 
 addButton.addEventListener('click', check);
-// completed.addEventListener('click', completed);
+
 
 
 
